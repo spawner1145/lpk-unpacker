@@ -2,10 +2,10 @@
 
 一个用于逆向LPK文件(一般来说是live2d的加密格式)的工具，特别针对Live2D模型文件进行了优化，支持标准目录结构输出
 
-✅ 支持标准LPK文件解包 (`STD2_0`类型)
-✅ 支持Steam Workshop LPK文件(live 2d viewer ex)解包 (`STM_1_0`类型)
-✅ 文件类型识别
-✅ Live2D标准目录结构输出
+- ✅ 支持标准LPK文件解包 (`STD2_0`类型)
+- ✅ 支持Steam Workshop LPK文件(live 2d viewer ex)解包 (`STM_1_0`类型)
+- ✅ 文件类型识别
+- ✅ Live2D标准目录结构输出
 
 ## 系统要求
 
