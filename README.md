@@ -67,6 +67,10 @@ Steam Workshop的fileId通常位于:
 ```
 PATH_TO_STEAM/steamapps/common/Live2DViewerEX/shared/workshop/[数字文件夹名]
 ```
+或者
+```
+PATH_TO_STEAM/steamapps/workshop/content/[数字文件夹名]
+```
 其中数字文件夹名就是fileId
 
 ## 输出文件夹命名规则
