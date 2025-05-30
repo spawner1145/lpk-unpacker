@@ -39,7 +39,7 @@ def main():
                        help="config.json文件路径 (Steam Workshop文件需要)")
     parser.add_argument("target_lpk", 
                        help="要解包的LPK文件路径")
-    parser.add_argument("output_dir", default='./output',
+    parser.add_argument("output_dir", default='./output', nargs='?',
                        help="解包输出目录")
     
     args = parser.parse_args()

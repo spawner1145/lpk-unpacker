@@ -118,7 +118,7 @@ model_name/
 │   ├── expression_01.exp3.json
 │   └── expression_02.exp3.json
 ├── physics/                   # 物理文件
-│   └── physics.physics3.json
+│   └── physics.physic3.json
 ├── pose/                      # 姿势文件
 │   └── pose.json
 ├── effects/                   # 特效文件
