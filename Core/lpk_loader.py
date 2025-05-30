@@ -109,11 +109,11 @@ class LpkLoader():
         out_s = json.dumps(entry, ensure_ascii=False)
         id = len(self.entrys)
 
-        self.entrys[f"model{id}.json"] = out_s
+        self.entrys[f"model{id}.model3.json"] = out_s
 
-        self.trans[model_json] = f"model{id}.json"
+        self.trans[model_json] = f"model{id}.model3.json"
 
-        logger.debug(f"model{id}.json:\n{entry}")
+        logger.debug(f"model{id}.model3.json:\n{entry}")
 
         for name, val in travels_dict(entry):
             logger.debug(f"{name} -> {val}")
