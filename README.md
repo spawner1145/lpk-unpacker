@@ -1,6 +1,6 @@
-# LPK 解包器 (LPK Unpacker)
+# LPK UNPACKER
 
-一个用于解包LPK文件的工具，特别针对Live2D模型文件进行了优化，支持标准目录结构输出。
+一个用于逆向LPK文件(一般来说是live2d的加密格式)的工具，特别针对Live2D模型文件进行了优化，支持标准目录结构输出
 
 ## 功能特点
 
@@ -69,7 +69,7 @@ Steam Workshop的fileId通常位于:
 ```
 PATH_TO_STEAM/steamapps/workshop/content/616720/[数字文件夹名]
 ```
-其中数字文件夹名就是fileId。
+其中数字文件夹名就是fileId
 
 ## 输出文件夹命名规则
 
