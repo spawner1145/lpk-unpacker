@@ -71,7 +71,7 @@ PATH_TO_STEAM/steamapps/common/Live2DViewerEX/shared/workshop/[数字文件夹�
 ```
 PATH_TO_STEAM/steamapps/workshop/content/[数字文件夹名]
 ```
-其中数字文件夹名就是fileId
+其中数字文件夹名就是fileId，lpk文件和config.json通常也在这两个文件夹里
 
 ## 输出文件夹命名规则
 
