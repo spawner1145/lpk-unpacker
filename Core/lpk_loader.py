@@ -192,6 +192,7 @@ class LpkLoader():
         if file_ext in ['.png', '.jpg', '.jpeg', '.bmp', '.tga']:
             subfolder = 'textures'
         elif 'motion' in filename_lower and file_ext == '.json':
+            filename = filename.replace('.json', '.motion3.json')
             if 'idle' in filename_lower or 'idle' in original_lower:
                 subfolder = 'motions/idle'
             elif 'tap' in filename_lower or 'touch' in filename_lower or 'tap' in original_lower:
@@ -204,10 +205,13 @@ class LpkLoader():
                 subfolder = 'motions'
         elif ('expression' in filename_lower or 'exp' in filename_lower or 
               'expression' in original_lower or 'exp' in original_lower) and file_ext == '.json':
+            filename = filename.replace('.json', '.exp3.json')
             subfolder = 'expressions'
         elif 'physics' in filename_lower and file_ext == '.json':
+            filename = filename.replace('.json', '.physic3.json')
             subfolder = 'physics'
         elif 'pose' in filename_lower and file_ext == '.json':
+            filename = filename.replace('.json', '.pose.json')
             subfolder = 'pose'
         elif 'effect' in filename_lower and file_ext == '.json':
             subfolder = 'effects'
@@ -244,21 +248,21 @@ class LpkLoader():
             return f"textures/{filename}"
         elif 'motion' in filename_lower and file_ext == '.json':
             if 'idle' in filename_lower:
-                return f"motions/idle/{filename}"
+                return f"motions/idle/{filename}".replace('.json', '.motion3.json')
             elif 'tap' in filename_lower or 'touch' in filename_lower:
-                return f"motions/tap/{filename}"
+                return f"motions/tap/{filename}".replace('.json', '.motion3.json')
             elif 'flick' in filename_lower:
-                return f"motions/flick/{filename}"
+                return f"motions/flick/{filename}".replace('.json', '.motion3.json')
             elif 'pinch' in filename_lower:
-                return f"motions/pinch/{filename}"
+                return f"motions/pinch/{filename}".replace('.json', '.motion3.json')
             else:
-                return f"motions/{filename}"
+                return f"motions/{filename}".replace('.json', '.motion3.json')
         elif ('expression' in filename_lower or 'exp' in filename_lower) and file_ext == '.json':
-            return f"expressions/{filename}"
+            return f"expressions/{filename}".replace('.json', '.exp3.json')
         elif 'physics' in filename_lower and file_ext == '.json':
-            return f"physics/{filename}"
+            return f"physics/{filename}".replace('.json', '.physic3.json')
         elif 'pose' in filename_lower and file_ext == '.json':
-            return f"pose/{filename}"
+            return f"pose/{filename}".replace('.json', '.pose.json')
         elif 'effect' in filename_lower and file_ext == '.json':
             return f"effects/{filename}"
         elif 'userdata' in filename_lower and file_ext == '.json':
