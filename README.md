@@ -65,7 +65,7 @@ python main.py -vv model.lpk ./output
 
 Steam Workshop的fileId通常位于:
 ```
-PATH_TO_STEAM/steamapps/workshop/content/616720/[数字文件夹名]
+PATH_TO_STEAM/steamapps/common/Live2DViewerEX/shared/workshop/[数字文件夹名]
 ```
 其中数字文件夹名就是fileId
 
